@@ -1,0 +1,36 @@
+#map { height: 100%; width: 100%; }
+
+.metadata {
+  font-size: 80%;
+  color: #999;
+}
+
+.x-html h2  
+{
+    font-size: 18px;
+}
+
+.filterField
+{
+    padding: 0px;
+}
+
+.x-button-back {
+   background-color: #db8211;
+}
+
+.homeButton{
+	background: url(../lib/touch/resources/themes/images/default/pictos/home.png) !important;
+	background-size: 40px 40px;	
+	background-color: #ccc;
+	width: 40px;
+	height: 40px;
+}
+
+
+.mainMenu .x-list-item { color: #f9f9f9; }
+/* ugly hack to style main menu */
+.mainMenu div.x-list-item:nth-child(1) { background: #01723E; }
+.mainMenu div.x-list-item:nth-child(2) { background: #A24613; }
+.mainMenu div.x-list-item:nth-child(3) { background: #C9861E; }
+.mainMenu div.x-list-item:nth-child(4) { background: #12476F; }

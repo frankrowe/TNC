@@ -1,0 +1,281 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 15,
+                "Id2": 1,
+                "audio": "audio/Common Winterberry.mp3",
+                "images": [
+                    "001.jpg",
+                    "002.jpg",
+                    "003.jpg",
+                    "004.jpg",
+                    "005.jpg",
+                    "006.jpg"
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.485041,
+                    39.531466
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 16,
+                "Id2": 2,
+                "audio": "audio/Creeping Plants and Shrubs.mp3",
+                "images": [
+                    "001.jpg",
+                    "002.jpg",
+                    "003.jpg",
+                    "004.jpg",
+                    "005.jpg",
+                    "006.jpg"
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.483898,
+                    39.530816
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 17,
+                "Id2": 3,
+                "audio": "audio/Eastern Hemlock.mp3",
+                "images": [
+                    "001.jpg",
+                    "002.jpg",
+                    "003.jpg",
+                    "004.jpg",
+                    "005.jpg",
+                    "006.jpg"
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.483064,
+                    39.531052
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 18,
+                "Id2": 4,
+                "audio": "audio/Hair Cap Moss.mp3",
+                "images": [
+                    "001.jpg",
+                    "002.jpg",
+                    "003.jpg",
+                    "004.jpg",
+                    "005.jpg",
+                    "006.jpg"
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.483001,
+                    39.533515
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 19,
+                "Id2": 5,
+                "audio": "audio/Fungi.mp3",
+                "images": [
+                    "001.jpg",
+                    "002.jpg",
+                    "003.jpg",
+                    "004.jpg",
+                    "005.jpg",
+                    "006.jpg"
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.483289,
+                    39.534895
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 20,
+                "Id2": 11,
+                "audio": "audio/Fungi.mp3",
+                "images": [
+                    "001.jpg",
+                    "002.jpg",
+                    "003.jpg",
+                    "004.jpg",
+                    "005.jpg",
+                    "006.jpg"
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.484144,
+                    39.534421
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 21,
+                "Id2": 6,
+                "audio": "audio/Fungi.mp3",
+                "images": [
+                    "001.jpg",
+                    "002.jpg",
+                    "003.jpg",
+                    "004.jpg",
+                    "005.jpg",
+                    "006.jpg"
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.482923,
+                    39.535014
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 22,
+                "Id2": 8,
+                "audio": "audio/Fungi.mp3",
+                "images": [
+                    "001.jpg",
+                    "002.jpg",
+                    "003.jpg",
+                    "004.jpg",
+                    "005.jpg",
+                    "006.jpg"
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.481376,
+                    39.535367
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 23,
+                "Id2": 9,
+                "audio": "audio/Fungi.mp3",
+                "images": [
+                    "001.jpg",
+                    "002.jpg",
+                    "003.jpg",
+                    "004.jpg",
+                    "005.jpg",
+                    "006.jpg"
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.481889,
+                    39.536388
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 24,
+                "Id2": 10,
+                "audio": "audio/Fungi.mp3",
+                "images": [
+                    "001.jpg",
+                    "002.jpg",
+                    "003.jpg",
+                    "004.jpg",
+                    "005.jpg",
+                    "006.jpg"
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.482918,
+                    39.536171
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 25,
+                "Id2": 7,
+                "audio": "audio/Fungi.mp3",
+                "images": [
+                    "001.jpg",
+                    "002.jpg",
+                    "003.jpg",
+                    "004.jpg",
+                    "005.jpg",
+                    "006.jpg"
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.482204,
+                    39.534937
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ID": 26,
+                "Id2": 12,
+                "audio": "audio/Fungi.mp3",
+                "images": [
+                    "001.jpg",
+                    "002.jpg",
+                    "003.jpg",
+                    "004.jpg",
+                    "005.jpg",
+                    "006.jpg"
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.486284,
+                    39.532301
+                ]
+            }
+        }
+    ]
+}

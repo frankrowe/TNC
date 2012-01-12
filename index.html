@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>TNC Trail Guide</title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+	<meta charset="utf-8">
+
+
+	<!-- iPad/iPhone specific css below, add after your main css >
+	<link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />		
+	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />		
+	-->
+	<!-- If your application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->    
+    <script src="lib/touch/sencha-touch.js"></script>
+    <link href="lib/touch/resources/css/nature.css" rel="stylesheet" type="text/css" />   
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="dist/leaflet.js"></script>
+    <link rel="stylesheet" href="dist/leaflet.css" />
+        
+    <script src="app/app.js"></script>
+    <script src="app/map.js"></script>    
+    <script src="app/helpers.js"></script>    
+    <script src="app/models/Trail.js"></script>
+    <script src="app/models/TrailStore.js"></script>
+    <script src="app/views/MainMenu.js"></script>
+    <script src="app/views/Viewport.js"></script>
+
+        
+  	<!--<script type="text/javascript" charset="utf-8" src="phonegap-1.2.0.js"></script>    -->
+    <script>        
+        document.addEventListener("deviceready", app.mainLaunch, false);
+    </script>        
+
+  </head>
+  <body>
+  </body>
+</html>
