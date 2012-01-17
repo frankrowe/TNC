@@ -6,10 +6,10 @@
     this.map = null;
     this.activeTrail = null;
     this.activeSeasons = {
-        "spring": true,
-        "summer": true,
-        "fall": true,
-        "winter": true
+        "Spring": true,
+        "Summer": true,
+        "Fall": true,
+        "Winter": true
     };
     this.activeThemes = {
         "Animals": true,
@@ -29,7 +29,7 @@
 
         var contours = new L.TileLayer('http://{s}.toposm.com/us/contours/{z}/{x}/{y}.png', { subdomains: ['tile1', 'tile2', 'tile3'] });
         var relief = new L.TileLayer('http://{s}.toposm.com/us/color-relief/{z}/{x}/{y}.jpg', { subdomains: ['tile1', 'tile2', 'tile3'] });
-        //var bing = new L.TileLayer.Bing("AuP0WKEcu0yk9JY6dvQ8YJaUsvHt0gC6VW6Iw4pJfZzxtjki5q1t4FkYpgBZcQ_9", 'AerialWithLabels');
+        var osm = new L.TileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png');        
         var arc = new L.TileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}.png');
         var topo = new L.TileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/USA_Topo_Maps/MapServer/tile/{z}/{y}/{x}.png');
         var trails = new L.GeoJSON();
@@ -37,9 +37,6 @@
         var imageBounds = new L.LatLngBounds(
 			            new L.LatLng(39.52996, -79.48844),
 			            new L.LatLng(39.53751, -79.48046));
-
-        var topogroup = new L.LayerGroup();
-        topogroup.addLayer(topo);
 
         this.map.setView(trailLocation, 16).addLayer(arc);
         this.drawTours();

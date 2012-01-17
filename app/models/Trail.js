@@ -64,8 +64,8 @@ app.trailData = [
                 "ID": 1,                
                 "name": "American Mountain Ash",                
                 "seasons": {
-                    "spring": true,
-                    "summer": true
+                    "Spring": true,
+                    "Summer": true
                 },
                 "themes": {
                     'Humans': true,
@@ -83,10 +83,10 @@ app.trailData = [
                 "ID": 2,                
                 "name": "Beaver Pond, Green Frog and Warblers",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {                    
                     'Animals': true,
@@ -108,10 +108,10 @@ app.trailData = [
                 "ID": 3,                
                 "name": "Black Cherry",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {                    
                     'Plants': true                    
@@ -127,10 +127,10 @@ app.trailData = [
                 "ID": 4,                
                 "name": "Bogs and Sphagnum Moss",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Plants': true,
@@ -150,10 +150,10 @@ app.trailData = [
                 "ID": 5,                
                 "name": "Bracken and Club Moss",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Plants': true,
@@ -171,8 +171,8 @@ app.trailData = [
                 "ID": 6,                
                 "name": "Bristly Dewberry and Goldthread",
                 "seasons": {
-                    "spring": true,
-                    "summer": true
+                    "Spring": true,
+                    "Summer": true
                 },
                 "themes": {
                     'Plants': true
@@ -188,8 +188,8 @@ app.trailData = [
                 "ID": 7,                
                 "name": "Bristly Sarsaparilla",
                 "seasons": {
-                    "spring": true,
-                    "summer": true
+                    "Spring": true,
+                    "Summer": true
                 },
                 "themes": {
                     'Humans': true,
@@ -209,7 +209,7 @@ app.trailData = [
                 "ID": 8,                
                 "name": "Butterflies and Fireweed",
                 "seasons": {
-                    "summer": true
+                    "Summer": true
                 },
                 "themes": {
                     'Animals': true,
@@ -226,7 +226,7 @@ app.trailData = [
                 "ID": 9,                
                 "name": "Chokeberry",
                 "seasons": {
-                    "summer": true
+                    "Summer": true
                 },
                 "themes": {
                     'Animals': true,
@@ -246,9 +246,9 @@ app.trailData = [
                 "ID": 10,                
                 "name": "Cinnamon Fern",
                 "seasons": {
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
 
@@ -265,10 +265,10 @@ app.trailData = [
                 "ID": 11,                
                 "name": "Climate Change",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Humans': true,
@@ -289,9 +289,9 @@ app.trailData = [
                 "ID": 12,                
                 "name": "Common Winterberry",
                 "seasons": {
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Plants': true
@@ -307,10 +307,10 @@ app.trailData = [
                 "ID": 13,                
                 "name": "Cranesville Habitat and Man's Role",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Humans': true,
@@ -328,9 +328,9 @@ app.trailData = [
                 "ID": 14,                
                 "name": "Creeping Plants and Shrubs",
                 "seasons": {
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Plants': true
@@ -347,10 +347,10 @@ app.trailData = [
                 "ID": 15,                
                 "name": "Eastern Hemlock",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Humans': true,
@@ -371,10 +371,10 @@ app.trailData = [
                 "ID": 16,                
                 "name": "Evaporation and Transpiration",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Plants': true,
@@ -393,9 +393,9 @@ app.trailData = [
                 "ID": 17,                
                 "name": "Fungi",
                 "seasons": {
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Plants': true
@@ -411,10 +411,10 @@ app.trailData = [
                 "ID": 18,                
                 "name": "Hair Cap Moss",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Plants': true
@@ -430,10 +430,10 @@ app.trailData = [
                 "ID": 19,                
                 "name": "Hawthorn and Crab Apple",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
 
@@ -451,10 +451,10 @@ app.trailData = [
                 "ID": 20,                
                 "name": "Heaths",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Plants': true,
@@ -475,10 +475,10 @@ app.trailData = [
                 "ID": 21,                
                 "name": "History of Cranesville Swamp",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Humans': true,
@@ -510,10 +510,10 @@ app.trailData = [
                 "ID": 22,                
                 "name": "Hydrology of Cranesville Swamp",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Humans': true,
@@ -545,10 +545,10 @@ app.trailData = [
                 "ID": 23,                
                 "name": "Indigo Bunting and Eastern Towhee",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Humans': true,
@@ -580,10 +580,10 @@ app.trailData = [
                 "ID": 24,                
                 "name": "Interrupted Fern",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Humans': true,
@@ -615,10 +615,10 @@ app.trailData = [
                 "ID": 25,                
                 "name": "Intro to Cranesville Swamp",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Humans': true,
@@ -650,10 +650,10 @@ app.trailData = [
                 "ID": 26,                
                 "name": "Juneberry",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Humans': true,
@@ -685,10 +685,10 @@ app.trailData = [
                 "ID": 27,                
                 "name": "Logging the Wetland",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Humans': true,
@@ -720,10 +720,10 @@ app.trailData = [
                 "ID": 28,                
                 "name": "Maples and Mountain Oat Grass",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Humans': true,
@@ -755,10 +755,10 @@ app.trailData = [
                 "ID": 29,                
                 "name": "More Bog Plants and Cattails",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Humans': true,
@@ -790,10 +790,10 @@ app.trailData = [
                 "ID": 30,                
                 "name": "New York Fern and Intermediate Wood",
                 "seasons": {
-                    "winter": true,
-                    "spring": true,
-                    "summer": true,
-                    "fall": true
+                    "Winter": true,
+                    "Spring": true,
+                    "Summer": true,
+                    "Fall": true
                 },
                 "themes": {
                     'Humans': true,

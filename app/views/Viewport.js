@@ -117,7 +117,7 @@ app.filterPanel = new Ext.Panel({
         cls: 'filterField',
         items: [{
             xtype: 'togglefield',
-            name: 'spring',
+            name: 'Spring',
             label: 'Spring',
             value: 1,
             listeners: {
@@ -125,7 +125,7 @@ app.filterPanel = new Ext.Panel({
             }
         }, {
             xtype: 'togglefield',
-            name: 'summer',
+            name: 'Summer',
             label: 'Summer',
             value: 1,
             listeners: {
@@ -133,7 +133,7 @@ app.filterPanel = new Ext.Panel({
             }
         }, {
             xtype: 'togglefield',
-            name: 'fall',
+            name: 'Fall',
             label: 'Fall',
             value: 1,
             listeners: {
@@ -141,7 +141,7 @@ app.filterPanel = new Ext.Panel({
             }
         }, {
             xtype: 'togglefield',
-            name: 'winter',
+            name: 'Winter',
             label: 'Winter',
             value: 1,
             listeners: {

@@ -25,7 +25,8 @@ var getDetailCard = function (record, options) {
         }
     }
     var detailCard = new Ext.Panel({
-        styleHtmlContent: true,
+        scroll: 'vertical',   
+        height: 410,
         dockedItems: [{
             dock: 'top',
             xtype: 'toolbar',
@@ -41,10 +42,26 @@ var getDetailCard = function (record, options) {
         items: [{
             xtype: 'panel',
             styleHtmlContent: true,
+                    
             tpl: [
                     "<h2>{name}</h2>",
                     "{info}",
-                    '<audio src="{text}.mp3" controls preload="auto" autobuffer></audio>'
+                    '<audio src="{text}.mp3" controls preload="auto" autobuffer></audio>',
+                    '<ul>',
+                        '<tpl for="Object.keys(seasons)">',                        
+                            '<li>{[values]}</li>',
+                        '</tpl>',
+                    '</ul>',
+                    '<ul>',
+                        '<tpl for="Object.keys(themes)">',                        
+                            '<li>{[values]}</li>',
+                        '</tpl>',
+                    '</ul>',
+                    '<ul>',
+                        '<tpl for="Object.keys(topics)">',                        
+                            '<li>{[values]}</li>',
+                        '</tpl>',
+                    '</ul>'
                 ]
         },
         button
@@ -255,6 +272,7 @@ app.themeTopicList = new Ext.NestedList({
                     var record = dataView.store.getAt(id - 1);
                     var p = getDetailCard(record, { 'list': true });
                     app.trailPanel.setActiveItem(p, { type: 'slide', direction: 'left' });
+                    setTimeout(function () { dataView.deselect(index); }, 500);
                 }
             },
             collectData: function (records, startIndex) {
