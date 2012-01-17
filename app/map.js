@@ -25,7 +25,9 @@
         var lng = this.trailData.lng;
         var trailLocation = new L.LatLng(lat, lng);
         this.map = new L.Map('map', { attributionControl: false, maxZoom: 16 });
-        //var cloudmadeUrl = 'http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png';           
+        var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/02a99a6699894046b271fda1269711ab/997/256/{z}/{x}/{y}.png',
+            cloudmadeAttribution = 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &',          
+            cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 18, attribution: cloudmadeAttribution}); 
 
         var contours = new L.TileLayer('http://{s}.toposm.com/us/contours/{z}/{x}/{y}.png', { subdomains: ['tile1', 'tile2', 'tile3'] });
         var relief = new L.TileLayer('http://{s}.toposm.com/us/color-relief/{z}/{x}/{y}.jpg', { subdomains: ['tile1', 'tile2', 'tile3'] });
@@ -38,7 +40,7 @@
 			            new L.LatLng(39.52996, -79.48844),
 			            new L.LatLng(39.53751, -79.48046));
 
-        this.map.setView(trailLocation, 16).addLayer(arc);
+        this.map.setView(trailLocation, 16).addLayer(cloudmade);
         this.drawTours();
         this.drawPaths();
     };
