@@ -131,6 +131,10 @@ app.themeTopics = {
             text: 'Humans',
             model: 'Theme',
             items: [{
+                text: 'All',
+                model: 'Topic',
+                leaf: true
+            },{
                 text: 'Human History',
                 model: 'Topic',
                 leaf: true
@@ -149,6 +153,10 @@ app.themeTopics = {
             model: 'Theme',
             leaf: false,
             items:[{
+                text: 'All',
+                model: 'Topic',
+                leaf: true
+            },{
                 model: 'Topic',
                 text: 'Birds',
                 leaf: true
@@ -170,6 +178,10 @@ app.themeTopics = {
             text: 'Plants',
             model: 'Theme',
             items: [{
+                text: 'All',
+                model: 'Topic',
+                leaf: true
+            },{
                 text: 'Trees & Shrubs',
                 model: 'Topic',
                 leaf: true
@@ -195,6 +207,10 @@ app.themeTopics = {
             text: 'Science',
             model: 'Theme',
             items: [{
+                text: 'All',
+                model: 'Topic',
+                leaf: true
+            },{
                 text: 'Ecology',
                 model: 'Topic',
                 leaf: true
@@ -257,6 +273,8 @@ app.themeTopicList = new Ext.NestedList({
     },
     getDetailCard: function (item, parent) {
         var topic = item.attributes.record.data.text;
+        var theme = item.parentNode.attributes.record.data.text;
+        console.log(theme);
         var parentData = parent.attributes.record.data;
 
         //create a list from the chosen topic
@@ -278,9 +296,19 @@ app.themeTopicList = new Ext.NestedList({
             collectData: function (records, startIndex) {
                 // map over the records and collect just the ones we want
                 var r = [];
-                for (var i = 0; i < records.length; i++)
-                    if (records[i].data.topics[topic])
-                        r.push(this.prepareData(records[i].data, 0, records[i]));
+                //If we want all topics, get records by Theme
+                if(topic === "All"){
+                    for (var i = 0; i < records.length; i++)
+                        if (records[i].data.themes[theme])
+                            r.push(this.prepareData(records[i].data, 0, records[i]));
+
+                }
+                //get records by topic
+                else{
+                    for (var i = 0; i < records.length; i++)
+                        if (records[i].data.topics[topic])
+                            r.push(this.prepareData(records[i].data, 0, records[i]));
+                }
                 app.currentTours = r;
                 return r;
             }

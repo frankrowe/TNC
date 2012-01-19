@@ -25,7 +25,9 @@
         var lng = this.trailData.lng;
         var trailLocation = new L.LatLng(lat, lng);
         this.map = new L.Map('map', { attributionControl: false, maxZoom: 16 });
-        var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/02a99a6699894046b271fda1269711ab/997/256/{z}/{x}/{y}.png',
+        //var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/02a99a6699894046b271fda1269711ab/997/256/{z}/{x}/{y}.png',
+        var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/26250/256/{z}/{x}/{y}.png',
+        
             cloudmadeAttribution = 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &',          
             cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 18, attribution: cloudmadeAttribution}); 
 
