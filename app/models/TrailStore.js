@@ -15,7 +15,7 @@ var getDetailCard = function (record, options) {
             button = new Ext.Button({
                 ui: 'normal',
                 text: 'Show On Map',
-                handler: function (b, e) {                
+                handler: function (b, e) {
                     app.trailPanel.setActiveItem(2, { type: 'slide', direction: 'left' });
                     app.applyActiveTabStyle(app.trailBar.items.items[3]);
                     app.trailMap.createMap();
@@ -25,8 +25,9 @@ var getDetailCard = function (record, options) {
         }
     }
     var detailCard = new Ext.Panel({
-        scroll: 'vertical',   
+        scroll: 'vertical',
         height: 410,
+        styleHtmlContent: true,
         dockedItems: [{
             dock: 'top',
             xtype: 'toolbar',
@@ -40,25 +41,23 @@ var getDetailCard = function (record, options) {
             }]
         }],
         items: [{
-            xtype: 'panel',
-            styleHtmlContent: true,
-                    
+            xtype: 'panel',                    
             tpl: [
                     "<h2>{name}</h2>",
                     "{info}",
-                    '<audio src="{text}.mp3" controls preload="auto" autobuffer></audio>',
+                    '<audio src="audio/{name}.mp3" controls preload="auto" autobuffer></audio>',
                     '<ul>',
-                        '<tpl for="Object.keys(seasons)">',                        
+                        '<tpl for="Object.keys(seasons)">',
                             '<li>{[values]}</li>',
                         '</tpl>',
                     '</ul>',
                     '<ul>',
-                        '<tpl for="Object.keys(themes)">',                        
+                        '<tpl for="Object.keys(themes)">',
                             '<li>{[values]}</li>',
                         '</tpl>',
                     '</ul>',
                     '<ul>',
-                        '<tpl for="Object.keys(topics)">',                        
+                        '<tpl for="Object.keys(topics)">',
                             '<li>{[values]}</li>',
                         '</tpl>',
                     '</ul>'
@@ -80,7 +79,7 @@ Ext.regModel("TrailItem", {
         { name: "model", type: "string" },
         { name: "lat", type: "auto" },
         { name: "lng", type: "auto" },
-        { name: "tours", type: "auto" }        
+        { name: "tours", type: "auto" }
     ]
 });
 
@@ -104,7 +103,7 @@ app.trailList = new Ext.List({
             var trailname = app.trailData[index].text;
             app.trailInfoPanel.dockedItems.items[0].setTitle(trailname);
             app.mapPanel.dockedItems.items[0].setTitle(trailname);
-            app.filterPanel.dockedItems.items[0].setTitle(trailname);            
+            app.filterPanel.dockedItems.items[0].setTitle(trailname);
             app.trailInfoPanel.items.items[0].update(app.trailData[index].desc);
             app.views.viewport.setActiveItem(2, 'slide');
             app.trailPanel.setActiveItem(0);
@@ -282,7 +281,7 @@ app.themeTopicList = new Ext.NestedList({
             itemTpl: '{name}',
             height: 410,
             store: app.TourStore,
-            onItemDisclosure: true, 
+            onItemDisclosure: true,
             listeners: {
                 itemtap: function (dataView, index, item, e) {
                     //get detail card
@@ -305,9 +304,11 @@ app.themeTopicList = new Ext.NestedList({
                 }
                 //get records by topic
                 else{
-                    for (var i = 0; i < records.length; i++)
-                        if (records[i].data.topics[topic])
+                    for (var i = 0; i < records.length; i++) {
+                        if (records[i].data.topics[topic]) {
                             r.push(this.prepareData(records[i].data, 0, records[i]));
+                        }
+                    }
                 }
                 app.currentTours = r;
                 return r;

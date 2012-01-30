@@ -27,6 +27,10 @@
 	height: 40px;	
 }
 
+audio { 	
+	width: 100%;
+	margin: 0 auto;
+}
 
 .mainMenu .x-list-item { color: #f9f9f9; }
 /* ugly hack to style main menu */
