@@ -38,3 +38,5 @@ audio {
 .mainMenu div.x-list-item:nth-child(2) { background: #A24613; }
 .mainMenu div.x-list-item:nth-child(3) { background: #C9861E; }
 .mainMenu div.x-list-item:nth-child(4) { background: #12476F; }
+
+.center { margin: 0 auto; margin-bottom: 50px; }

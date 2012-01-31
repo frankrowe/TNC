@@ -15,6 +15,8 @@ var getDetailCard = function (record, options) {
             button = new Ext.Button({
                 ui: 'normal',
                 text: 'Show On Map',
+                width: 200,
+                class: 'center',
                 handler: function (b, e) {
                     app.trailPanel.setActiveItem(2, { type: 'slide', direction: 'left' });
                     app.applyActiveTabStyle(app.trailBar.items.items[3]);
@@ -41,10 +43,15 @@ var getDetailCard = function (record, options) {
             }]
         }],
         items: [{
-            xtype: 'panel',                    
+            xtype: 'panel',
             tpl: [
-                    "<h2>{name}</h2>",
-                    "{info}",
+                "<h2>{name}</h2>"
+            ]  
+        },button,
+        {
+            xtype: 'panel',                                
+            tpl: [
+                    
                     '<audio src="audio/{name}.mp3" controls preload="auto" autobuffer></audio>',
                     '<ul>',
                         '<tpl for="Object.keys(seasons)">',
@@ -62,11 +69,11 @@ var getDetailCard = function (record, options) {
                         '</tpl>',
                     '</ul>'
                 ]
-        },
-        button
+        }
         ]
     });
     detailCard.items.items[0].update(itemData);
+    detailCard.items.items[2].update(itemData);
     //this.backButton.setText("Topics");
     return detailCard;
 };
