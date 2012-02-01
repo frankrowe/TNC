@@ -45,8 +45,7 @@ audio {
 	list-style-type: none;
 	width: 240px;
 	border-bottom: 1px solid #ddd;
-	margin: 0 auto;
-	background: red;
+	margin: 0 auto;	
 }
 
 #greenList li {
