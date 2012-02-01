@@ -16,7 +16,7 @@ var getDetailCard = function (record, options) {
                 ui: 'normal',
                 text: 'Show On Map',
                 width: 200,
-                class: 'center',
+                cls: 'center',
                 handler: function (b, e) {
                     app.trailPanel.setActiveItem(2, { type: 'slide', direction: 'left' });
                     app.applyActiveTabStyle(app.trailBar.items.items[3]);
@@ -45,25 +45,24 @@ var getDetailCard = function (record, options) {
         items: [{
             xtype: 'panel',
             tpl: [
-                "<h2>{name}</h2>"
-            ]  
+                '<h2 class="tourTitle">{name}</h2>'
+            ]
         },button,
         {
-            xtype: 'panel',                                
+            xtype: 'panel',
             tpl: [
                     
                     '<audio src="audio/{name}.mp3" controls preload="auto" autobuffer></audio>',
-                    '<ul>',
+                    '<ul id="greenList">',
+                        '<li class="title">Seasons</li>',
                         '<tpl for="Object.keys(seasons)">',
                             '<li>{[values]}</li>',
                         '</tpl>',
-                    '</ul>',
-                    '<ul>',
+                        '<li class="title">Themes</li>',
                         '<tpl for="Object.keys(themes)">',
                             '<li>{[values]}</li>',
                         '</tpl>',
-                    '</ul>',
-                    '<ul>',
+                        '<li class="title">Topics</li>',
                         '<tpl for="Object.keys(topics)">',
                             '<li>{[values]}</li>',
                         '</tpl>',
@@ -265,8 +264,8 @@ app.themeTopicList = new Ext.NestedList({
     title: 'Themes',
     store: app.ThemeStore,
     useTitleAsBackText: false,
-    onItemDisclosure: true, 
-    getItemTextTpl: function () {        
+    onItemDisclosure: true,
+    getItemTextTpl: function () {
         var lol = [2, 5, 4, 2];
         var tplConstructor = '{text}' +
             '<tpl if="model === \'Theme\'">' +

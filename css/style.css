@@ -39,4 +39,62 @@ audio {
 .mainMenu div.x-list-item:nth-child(3) { background: #C9861E; }
 .mainMenu div.x-list-item:nth-child(4) { background: #12476F; }
 
-.center { margin: 0 auto; margin-bottom: 50px; }
+.center { margin: 10px auto 10px auto;}
+
+#greenList {
+	list-style-type: none;
+	width: 240px;
+	border-bottom: 1px solid #ddd;
+	margin: 0 auto;
+	background: red;
+}
+
+#greenList li {
+	display: block;
+	width: 200px;
+	padding: 2px;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	text-align: center;
+	background: #01723E;
+	color: #f9f9f9;
+	font-size: 15px;
+}
+
+#greenList li.title {
+	font-size: 16px;
+	font-weight: bold;
+	background: #013F22;
+}
+
+h2.tourTitle {
+	font-weight: bold;
+	font-size: 18px;
+	color: #013F22;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
