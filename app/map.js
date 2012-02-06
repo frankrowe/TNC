@@ -133,7 +133,7 @@
             var index = e.layer.options.id;
             var index = index - 1;
             var record = app.TourStore.getAt(index);
-            var p = getDetailCard(record, { 'map': true });
+            var p = app.getDetailCard(record, { 'map': true });
             app.trailPanel.setActiveItem(p, { type: 'slide', direction: 'left' });
         });
 
