@@ -42,7 +42,7 @@
 			            new L.LatLng(39.52996, -79.48844),
 			            new L.LatLng(39.53751, -79.48046));
 
-        this.map.setView(trailLocation, 16).addLayer(cloudmade);
+        this.map.setView(trailLocation, 16).addLayer(arc);
         this.drawTours();
         this.drawPaths();
     };
@@ -146,5 +146,16 @@
         var marker = new L.Marker(latlng, {id: tour.ID });
         this.map.addLayer(marker);
         this.map.setView(latlng, 16)
+    };
+
+    this.geoLocate = function(){
+        var self = this;
+        navigator.geolocation.getCurrentPosition(function(position){
+            var lat = position.coords.latitude;
+            var lng = position.coords.longitude;
+            var loc = new L.LatLng(lat, lng);
+            self.map.setView(loc, 16);
+        });
+
     };
 }

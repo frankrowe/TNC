@@ -7,7 +7,15 @@ app.mapPanel = new Ext.Panel({
         dock: 'top',
         xtype: 'toolbar',
         title: 'Trail',
-        items: []
+        layout: { pack: 'right' },
+        items: [{
+                iconCls: 'locate', 
+                iconMask: true, 
+                ui: 'plain',
+                handler: function () {
+                    app.trailMap.geoLocate();
+                }
+            }]
     }],
     items: [{
         xtype: "component",
