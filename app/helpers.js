@@ -32,4 +32,42 @@ app.calculateTopicTotals = function () {
             //finish
         }
     }
-}
+};
+
+app.getFlickrPhotos = function(){
+    
+
+    Ext.regModel('Photo', {
+        root: 'items',
+        fields: ['title']
+    });
+
+    var store = new Ext.data.Store({
+        model: 'Photo',    
+        proxy: {
+            type: 'scripttag',
+            url : 'http://api.flickr.com/services/feeds/photos_public.gne?tag=cat&mode=any&format=json',
+            callbackParam : "jsoncallback"    
+        }
+    });
+
+    store.load({
+        scope   : this,
+        callback: function(records, operation, success) {
+            //the operation object contains all of the details of the load operation
+            console.log(records);
+        }
+    });
+
+};
+
+
+
+
+
+
+
+
+
+
+
