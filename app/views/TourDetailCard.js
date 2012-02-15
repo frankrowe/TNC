@@ -1,4 +1,6 @@
 app.getDetailCard = function (record, options) {
+
+    
     var itemData = record.data;
     var backText = 'Back';
     var backIndex = 1;
