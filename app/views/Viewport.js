@@ -22,5 +22,3 @@ app.views.Viewport = Ext.extend(Ext.Panel, {
       app.reachOutPanel
     ]
 });
-
-app.getFlickrPhotos();

@@ -39,7 +39,11 @@ app.getFlickrPhotos = function(){
 
     Ext.regModel('Photo', {
         root: 'items',
-        fields: ['title']
+        fields: [
+            {name: 'title', type: 'string'},
+            {name: 'media', type: 'auto'},
+            {name: 'description', type: 'string'}
+        ]
     });
 
     var store = new Ext.data.Store({
@@ -47,7 +51,11 @@ app.getFlickrPhotos = function(){
         proxy: {
             type: 'scripttag',
             url : 'http://api.flickr.com/services/feeds/photos_public.gne?tag=cat&mode=any&format=json',
-            callbackParam : "jsoncallback"    
+            callbackParam : "jsoncallback",            
+            reader: {
+                type: 'json',
+                root: 'items'
+            }
         }
     });
 
@@ -55,10 +63,22 @@ app.getFlickrPhotos = function(){
         scope   : this,
         callback: function(records, operation, success) {
             //the operation object contains all of the details of the load operation
-            console.log(records);
+            var items = [];
+            store.each(function(rec){
+                items.push({
+                    html: '<img class="myImage" src=' + rec.data.media.m + '>'
+                });
+            });
+            var carousel = new Ext.Carousel({
+                    cardSwitchAnimation: 'slide',
+                    layoutOnOrientationChange: true,
+                    ui: 'light',
+                    items: items,
+                    style: 'background: #000',
+                    itemId: 'carousel'
+                });        
         }
     });
-
 };
 
 

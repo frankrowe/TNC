@@ -27,9 +27,17 @@ app.getDetailCard = function (record, options) {
             });
         }
     }
+
+    var images = [];
+    for(var i = 0; i < itemData.images.length; i++){
+        images.push({
+            html: '<img class="myImage" src="images/' + itemData.images[i] + '">'
+        });
+    };
+
     var detailCard = new Ext.Panel({
         scroll: 'vertical',
-        height: 410,
+        //height: 410,
         styleHtmlContent: true,
         dockedItems: [{
             dock: 'top',
@@ -48,12 +56,14 @@ app.getDetailCard = function (record, options) {
             tpl: [
                 '<h2 class="tourTitle">{name}</h2>'
             ]
-        },button,
+        },
+        button,        
         {
             xtype: 'panel',
             tpl: [
                     
-                    '<audio src="audio/{name}.mp3" controls preload="auto" autobuffer></audio>',
+                    '<audio src="audio/{name}.mp3" controls preload="auto" autobuffer></audio>'
+                    /*
                     '<ul id="greenList">',
                         '<li class="title">Seasons</li>',
                         '<tpl for="Object.keys(seasons)">',
@@ -67,13 +77,20 @@ app.getDetailCard = function (record, options) {
                         '<tpl for="Object.keys(topics)">',
                             '<li>{[values]}</li>',
                         '</tpl>',
-                    '</ul>'
+                    '</ul>'*/
                 ]
+        },
+        {
+            xtype: 'carousel',
+            flex: 0.8,
+            height: 200,
+            style: 'text-align: center; background: #f9f9f9;',
+            items: images
         }
         ]
     });
     detailCard.items.items[0].update(itemData);
     detailCard.items.items[2].update(itemData);
     //this.backButton.setText("Topics");
-    return detailCard;
+    return detailCard;    
 };

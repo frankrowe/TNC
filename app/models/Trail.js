@@ -100,7 +100,7 @@ app.trailData = [
                     'Ecology': true,
                     'Hydrology': true                 
                 },
-                "images": [],
+                "images": ["bird1.jpeg", "bird2.jpeg"],
                 "lng": -79.483898,
                 "lat": 39.530816
             },
