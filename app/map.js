@@ -4,7 +4,7 @@
     this.pathsLayer = null;
     this.trailData = {};
     this.map = null;
-    this.activeTrail = null;
+    this.activeTrail = null; 
     this.activeSeasons = {
         "Spring": true,
         "Summer": true,

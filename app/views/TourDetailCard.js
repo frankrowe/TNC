@@ -28,10 +28,11 @@ app.getDetailCard = function (record, options) {
         }
     }
 
+    //make the images array to populate carousel
     var images = [];
     for(var i = 0; i < itemData.images.length; i++){
         images.push({
-            html: '<img class="myImage" src="images/' + itemData.images[i] + '">'
+            html: '<img src="images/' + itemData.images[i] + '">'
         });
     };
 
