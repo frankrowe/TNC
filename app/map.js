@@ -36,13 +36,16 @@
         var osm = new L.TileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png');        
         var arc = new L.TileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}.png');
         var topo = new L.TileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/USA_Topo_Maps/MapServer/tile/{z}/{y}/{x}.png');
+        //var localLayer = new L.TileLayer(' file:///Users/gnappworks/Documents/Apps/TNC/TNC/www/app/tiles/{z}/{y}/{x}.jpeg');
+        var localLayer = new L.TileLayer('tiles/{z}/{y}/{x}.jpeg');
+
         var trails = new L.GeoJSON();
 
         var imageBounds = new L.LatLngBounds(
 			            new L.LatLng(39.52996, -79.48844),
 			            new L.LatLng(39.53751, -79.48046));
 
-        this.map.setView(trailLocation, 16).addLayer(arc);
+        this.map.setView(trailLocation, 16).addLayer(localLayer);
         this.drawTours();
         this.drawPaths();
     };
